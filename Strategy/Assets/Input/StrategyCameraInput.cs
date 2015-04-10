@@ -9,9 +9,18 @@ namespace Assets.Input
 {
 	public class StrategyCameraInput : MonoBehaviour
 	{
-		
+		public float MaxSpeed = 2.0f;
+
+		private Transform _transform;
+
+		public StrategyCameraInput()
+		{
+			
+		}
+
 		private void Awake()
 		{
+			_transform = this.GetComponent<Transform>();
 		}
 
 
@@ -24,7 +33,16 @@ namespace Assets.Input
 		private void FixedUpdate()
 		{
 			// Read the inputs.
-			//bool crouch = Input.GetKey(KeyCode.LeftControl);
-			//float h = CrossPlatformInputManager.GetAxis("Horizontal");
+			this._transform.Translate(GetDisplacement("Horizontal"), GetDisplacement("Vertical"), 0);
+		}
+
+		private float GetDisplacement(string axisName)
+		{
+			float axis = CrossPlatformInputManager.GetAxis(axisName);
+
+			float displacement = axis * this.MaxSpeed * Time.deltaTime;
+
+			return displacement;
+		}
 	}
 }

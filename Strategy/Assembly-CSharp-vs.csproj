@@ -49,7 +49,10 @@
   <ItemGroup>
     <Compile Include="Assets\Input\StrategyCameraInput.cs" />
     <Compile Include="Assets\Models\Levels\LevelPrefabLetter.cs" />
+    <Compile Include="Assets\Scripts\Bots\BotStateMachine.cs" />
+    <Compile Include="Assets\Scripts\Bots\MeleeBotStateMachine.cs" />
     <Compile Include="Assets\Scripts\LevelLoadScript.cs" />
+    <None Include="Assets\Levels\level1.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -60,9 +63,6 @@
       <Project>{62B85F05-161A-8146-00EC-FE1C630D3068}</Project>
       <Name>Assembly-CSharp-firstpass-vs</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Assets\Levels\level1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -48,6 +48,8 @@
   <ItemGroup>
      <Compile Include="Assets\Input\StrategyCameraInput.cs" />
      <Compile Include="Assets\Models\Levels\LevelPrefabLetter.cs" />
+     <Compile Include="Assets\Scripts\Bots\BotStateMachine.cs" />
+     <Compile Include="Assets\Scripts\Bots\MeleeBotStateMachine.cs" />
      <Compile Include="Assets\Scripts\LevelLoadScript.cs" />
      <None Include="Assets\Levels\level1.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
